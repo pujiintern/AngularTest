@@ -4,14 +4,14 @@
         <script type = "text/javascript" src="js/lib/angular.min.js"></script>  
         <script type="text/javascript" src="js/AngularChat.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-        <link rel="stylesheet" href="css/bootstrap.min.css">   
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+ 
+
     <title>Simple Chat Application</title>
     </head>
   <body>
     <div ng-controller="jsonCtrl">
     
-   <h2><center>No.2</center></h2> 
+   <h2><center>Angular Chatting Apps</center></h2> 
 
         
     <table class="table table-striped">
@@ -21,6 +21,8 @@
             <td>{{resource.datetime}}</td>
        </tr>    
     </table>
+
+    
      <button class="btn" ng-click="addChat1()">Send <i class="icon-plus"></i></button><input type="text" ng-model="chatNo1"><label>No.1</label>
      <div class = "pull-right"><label>No.2</label><input type="text" ng-model="chatNo2"><button class="btn" ng-click="addChat2()">Send <i class="icon-plus"></i></button></div>
     {{employees}}
