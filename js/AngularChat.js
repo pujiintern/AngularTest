@@ -43,7 +43,12 @@ myApp.controller('jsonCtrl', function($scope, $http){
          httpPost();
      };
     
-    
+    $scope.deleteChat = function ( idx ) {
+            
+                $scope.chat.splice(idx, 1);
+                httpPost();
+            
+        };
         
    
    

@@ -12,18 +12,19 @@
     <div ng-controller="jsonCtrl">
     
    <h2><center>No.2</center></h2> 
-
-        
-    <table class="table table-striped">
-        <tr ng-repeat="resource in chat">
+            <table class="table table-striped">
+        <tr ng-repeat="resource in chat track by $index">
             <td>{{resource.user}}</td>
             <td>{{resource.text}}</td>
-            <td>{{resource.datetime}}</td>
+            <td>{{resource.datetime}}<button class="btn" ng-click="deleteChat($index)">Delete <i class="icon-plus"></i></button></td>
+            
        </tr>    
     </table>
+        
+    
      <button class="btn" ng-click="addChat1()">Send <i class="icon-plus"></i></button><input type="text" ng-model="chatNo1"><label>No.1</label>
      <div class = "pull-right"><label>No.2</label><input type="text" ng-model="chatNo2"><button class="btn" ng-click="addChat2()">Send <i class="icon-plus"></i></button></div>
-    {{employees}}
+    <br>
   </div>
 
  
